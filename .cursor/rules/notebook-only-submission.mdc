@@ -1,0 +1,28 @@
+---
+description: Notebook-only development and submission for IITH meme sentiment challenge
+alwaysApply: true
+---
+
+# Notebook-only submission (IITH Playground Challenge)
+
+## What gets evaluated
+
+- Submit **`AIET_PlayGround_Challenge_Colab_Notebook_v8.ipynb`** (or the current official challenge notebook filename if renamed by organizers).
+- That notebook is the **single source of truth** for grading. Evaluators run the notebook; they do not run a local codebase.
+
+## What is not allowed for submission
+
+- Do **not** create or depend on standalone local code for the graded solution: no separate `.py` modules, CLI scripts, training pipelines outside the notebook, or “import from repo” workflows meant to replace notebook cells.
+- Do **not** tell the user to split core model/data/training logic into files in this repo for evaluation purposes.
+- Helpers inside the notebook (cells that define functions/classes used by later cells) **are** allowed—that is still notebook development.
+
+## How to work in this repo
+
+- Develop, debug, and refine **inside the notebook** (Colab-aligned workflow).
+- When suggesting changes, edit notebook cells rather than adding parallel Python packages or app code in the repo.
+- Keep the repo minimal: notebook + documentation/rules only unless organizers explicitly require other files.
+
+## Agent behavior
+
+- Prefer `.ipynb` edits over new source trees.
+- If asked to “add a module” or “refactor into src/”, redirect to notebook cells unless the user explicitly states that work is **local experimentation only** and will not be submitted.
